@@ -42,7 +42,7 @@ const NotePage = ({params, history}) => {
         deleteNote()
       }else if (id !== 'new'){
         updateNote()
-      } else if (id == 'new' && note !== null){
+      } else if (id == 'new' && note.body !== null){
         createNote()
       }
       navigate('/')
